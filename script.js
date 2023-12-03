@@ -101,7 +101,7 @@ $(document).ready(function(){
         document.getElementById("stopwatchdiv").style.transform="translateX(400px)";
         document.getElementById("timerdiv").style.transform="translateX(0px)";
         flag=0;
-        $("plusmin").addClass("d-none");    
+        $("#plusmin").addClass("d-none");    
         $("form").removeClass("d-none");
         $("input").val("");
         $("#msdivst").addClass("mb-3");
@@ -187,7 +187,7 @@ $(document).ready(function(){
                 clearInterval(intervalst);
                 seconds=0;
                 milliseconds=0;
-                $("plusmin").addClass("d-none");
+                $("#plusmin").addClass("d-none");
                 $("#msdivst").removeClass("mb-3");
                 $(".blink").removeClass("blinkani");
                 $("#stopdivst").addClass("d-none");
@@ -227,7 +227,7 @@ $(document).ready(function(){
     });
     $("#restartst").click(function(){
         flag=0;
-        $("plusmin").addClass("d-none");
+        $("#plusmin").addClass("d-none");
         $("form").removeClass("d-none");
         $("input").val("");
         $("#msdivst").addClass("mb-3");
@@ -264,6 +264,7 @@ $(document).ready(function(){
         $(".lap,.mybtn,.lapsm,.circle,#lapbtn,#plusmin").css("background-color","rgb(127, 193, 255)");
         $(".container,h1,.stopwatchpart,.timerpart,lapsm,.lap,#start,#stop,#restart,#startst,#stopst,#restartst,#lapbtn,#plusmin").css("color","black");
         $(".container").css("border-color","black");
+        $(".blink").css("background-color","rgba(0,0,0,0.02)");
     }
     document.getElementById("darkmode").addEventListener("change",function(){
         if(document.getElementById("darkmode").checked){
@@ -273,7 +274,6 @@ $(document).ready(function(){
             $(".container,h1,.stopwatchpart,.timerpart,lapsm,.lap,#start,#stop,#restart,#startst,#stopst,#restartst,#lapbtn,#plusmin").css("color","white");
             $(".container").css("border-color","white");
             $(".blink").css("background-color","rgba(255,255,255,0.05)");
-            $(".blink").css("background-color","rgba(0,0,0,0.02)");
         }
         else{
             localStorage.setItem("darkmode",0);
