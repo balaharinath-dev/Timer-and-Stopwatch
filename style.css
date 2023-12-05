@@ -372,10 +372,12 @@ body{
     }
     @keyframes blink{
         0%{
-            transform: scale(1);
+            height: 1px;
+            width: 1px;
         }
         100%{
-            transform: scale(300);
+            height: 300px;
+            width: 300px;
         }
     }
     @keyframes stop{
