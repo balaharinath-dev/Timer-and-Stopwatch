@@ -375,7 +375,7 @@ body{
             transform: scale(1);
         }
         100%{
-            transform: scale(290);
+            transform: scale(300);
         }
     }
     @keyframes stop{
