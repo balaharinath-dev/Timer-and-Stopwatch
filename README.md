@@ -1,6 +1,6 @@
-#Code Clause Internship project
+#Code Clause Internship project 1
 # Timer-and-Stopwatch
-Timer and Stopwatch application
+Timer and Stopwatch  Web Application
 
 Features
 
